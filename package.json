@@ -20,7 +20,10 @@
     "url": "https://github.com/WilberthGamboa/CriptoApi/issues"
   },
   "homepage": "https://github.com/WilberthGamboa/CriptoApi#readme",
-  "dependencies": {
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.54.5"
   }
 }
