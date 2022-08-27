@@ -6,7 +6,7 @@ const obtenerDatos = json =>{
         monedas.map(moneda => {
             
 
-            if (moneda.rank<=10) {
+            if (moneda.rank<=5) {
               
                 const {id,name,rank,price,logo_url} = moneda;
                 
