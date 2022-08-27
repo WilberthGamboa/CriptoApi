@@ -10,7 +10,12 @@ const obtenerDatos = json =>{
               
                 const {id,name,rank,price,logo_url} = moneda;
                 
+                //limitamos cantidad de decimales
                 
+                
+               
+                
+        
               const cripto = new Criptomoneda(id,name,rank,price,logo_url);
             
             arregloDeCriptomonedas.push(cripto);
@@ -58,8 +63,7 @@ const crearElementosDom = (moneda) =>{
     //Insertamos los valores con js
     h2.textContent=`${moneda.nombre}`;
     img.src=`${moneda.logo}`
-    
     acronimo.textContent=`Siglas: ${moneda.acronimo}`;
     rank.textContent=`Rank: ${moneda.rank}`;
-    precio.textContent=`Valor USD: ${moneda.precio}`;
+    precio.textContent=`Valor USD: ${Number(moneda.precio).toFixed(2)}`;
 }
