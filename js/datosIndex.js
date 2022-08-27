@@ -2,29 +2,30 @@ const obtenerDatos = json =>{
     
     json.then(monedas =>{
         const arregloDeCriptomonedas = new Array();
-      //  console.table(monedas);
+        
         monedas.map(moneda => {
-            
-
-            if (moneda.rank<=10) {
+            //console.log(`${moneda.market_data.current_price.mxn}`)
+           
+            if (moneda.market_data.market_cap_rank<=10) {
               
-                const {id,name,rank,price,logo_url} = moneda;
+                const {id,symbol,market_data,image} = moneda;
                 
                 //limitamos cantidad de decimales
                 
-                
+         //     console.log(moneda);
                
-                
+                //.current_price.mxn
         
-              const cripto = new Criptomoneda(id,name,rank,price,logo_url);
-            
-            arregloDeCriptomonedas.push(cripto);
+              const cripto = new Criptomoneda(symbol,id,market_data.market_cap_rank,market_data.current_price.mxn,image.large);
+            console.log(cripto);
+          arregloDeCriptomonedas.push(cripto);
             
                  
             }
+          
         });
         
-        agregarDatosDom(arregloDeCriptomonedas);
+      agregarDatosDom(arregloDeCriptomonedas);
     })
 
 }
@@ -65,5 +66,5 @@ const crearElementosDom = (moneda) =>{
     img.src=`${moneda.logo}`
     acronimo.textContent=`Siglas: ${moneda.acronimo}`;
     rank.textContent=`Rank: ${moneda.rank}`;
-    precio.textContent=`Valor USD: ${Number(moneda.precio).toFixed(2)}`;
+    precio.textContent=`Valor MXN: ${moneda.precio}`;
 }
