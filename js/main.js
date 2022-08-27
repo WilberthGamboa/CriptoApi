@@ -1,6 +1,6 @@
  const json =consultarApi();
 
- //obtenerDatos(json);
+ obtenerDatos(json);
  
 
  

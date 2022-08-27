@@ -4,8 +4,9 @@ const obtenerDatos = json =>{
         const arregloDeCriptomonedas = new Array();
       //  console.table(monedas);
         monedas.map(moneda => {
+            console.log(`${moneda.name}`)
             
-
+            /*
             if (moneda.rank<=5) {
               
                 const {id,name,rank,price,logo_url} = moneda;
@@ -22,6 +23,7 @@ const obtenerDatos = json =>{
             
                  
             }
+            */
         });
         
         agregarDatosDom(arregloDeCriptomonedas);

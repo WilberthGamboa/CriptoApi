@@ -1,6 +1,7 @@
 //Funciones
 const consultarApi = async () =>{
-    const url = 'https://api.coingecko.com/api/v3/search?query=coins';
+  const url = 'https://api.coingecko.com/api/v3/coins';
+    //const url = 'https://api.coingecko.com/api/v3/search?query=';
     
    try {
     const  respuesta =  await fetch(`${url}`);
