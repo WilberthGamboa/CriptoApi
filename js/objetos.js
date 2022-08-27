@@ -1,13 +1,13 @@
 class Criptomoneda {
     
-    constructor (acronimo,nombre,rank,precio){
+    constructor (acronimo,nombre,rank,precio,logo){
        
         //acronimo,nombre,rank,precio
         this._acronimo = acronimo;
         this._nombre = nombre;
         this._rank = rank;
         this._precio = precio;
-       
+       this._logo= logo;
          
     }
   
@@ -23,6 +23,9 @@ class Criptomoneda {
     }
     get precio(){
         return this._precio;
+    }
+    get logo(){
+        return this._logo;
     }
 
  

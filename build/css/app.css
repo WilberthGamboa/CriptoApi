@@ -10,6 +10,8 @@ html {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to bottom, #89b2f0, #7cb8f1, #70bdf0, #67c2ed, #62c6e9);
   font-size: 1.6rem;
 }
 
@@ -362,8 +364,15 @@ template {
 @media (min-width: 768px) {
   .main {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 
@@ -371,4 +380,20 @@ template {
   background: #F5F5F5;
   box-shadow: 5px 5px 5px rgba(186, 126, 126, 0.5);
   border-radius: 10px;
+}
+@media (min-width: 992px) {
+  .tarjetaCripto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.criptocsvForma {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
