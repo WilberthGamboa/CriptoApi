@@ -1,0 +1,18 @@
+@use 'base/mixins' as m;
+
+body{
+   
+}
+.main{
+    @include m.tablet {
+        @include m.grid(5,2rem);
+        
+    }
+
+}
+.tarjetaCripto{
+    background: #F5F5F5;
+  box-shadow: 5px 5px 5px rgba(#BA7E7E, .5);
+  border-radius: 10px;
+ 
+}
