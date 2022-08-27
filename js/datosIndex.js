@@ -66,5 +66,5 @@ const crearElementosDom = (moneda) =>{
     img.src=`${moneda.logo}`
     acronimo.textContent=`Siglas: ${moneda.acronimo}`;
     rank.textContent=`Rank: ${moneda.rank}`;
-    precio.textContent=`Valor USD: ${Number(moneda.precio).toFixed(2)}`;
+    precio.textContent=`Valor MXN: ${moneda.precio}`;
 }
