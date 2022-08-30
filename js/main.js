@@ -1,10 +1,5 @@
- let id;
 
- 
- if(id===undefined){
-    id=''
- }
- const json =consultarApi(id);
+ const json =consultarApi();
 
  obtenerDatos(json);
  

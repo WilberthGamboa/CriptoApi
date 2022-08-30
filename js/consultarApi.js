@@ -1,7 +1,7 @@
 //Funciones
-const consultarApi = async (id) =>{
+const consultarApi = async () =>{
  
-  const url = `https://api.coingecko.com/api/v3/coins/${id}`;
+  const url = `https://api.coingecko.com/api/v3/coins`;
     //const url = 'https://api.coingecko.com/api/v3/search?query=';
     
    try {
@@ -9,7 +9,7 @@ const consultarApi = async (id) =>{
 
     if (respuesta.status==200) {
         const json = await respuesta.json();
-       console.log(json);
+        console.log(json);
         
       return json;
        
