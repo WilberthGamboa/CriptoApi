@@ -43,8 +43,16 @@ const buscarMoneda = json =>{
                 return el.nombre.toLowerCase().indexOf(query.toLowerCase()) > -1;
             })
           }
+          const x = filterItems(document.querySelector('#textoBuscador').value);
+        //  console.log(filterItems(document.querySelector('#textoBuscador').value))
           
-          console.log(filterItems(document.querySelector('#textoBuscador').value))
+          const prueba = document.querySelector('#prueba');
+         x.forEach(moneda => {
+            const div = document.createElement('P');
+            div.textContent=`${moneda.nombre}`
+            prueba.appendChild(div);
+         })
+          
         
        
     })
