@@ -1,3 +1,4 @@
+//
 class Criptomoneda {
     
     constructor (acronimo,nombre,rank,precio,logo){

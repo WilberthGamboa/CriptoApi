@@ -1,15 +1,26 @@
-const btnBuscardor = document.querySelector('#busqueda');
 
-btnBuscardor.addEventListener('click', ()=>{
-    const labelBuscadorMoneda = document.querySelector('#textoBuscador');
-    const idMoneda = labelBuscadorMoneda.value;
-    const json = consultarApi(idMoneda);
-    buscarMoneda(json)
+//VEAMOS SI DEVOLVEMOS LAS MONEDAS?
+
+const filtrarMonedas = json =>{
+  //OBTENEMOS EL TEXTO DEL BOTON POR CADA EVENTO
+  const btnBuscardor = document.querySelector('#busqueda');
+  const monedaBuscar = btnBuscardor.addEventListener('click', ()=>{
+  const labelBuscadorMoneda = document.querySelector('#textoBuscador');
+  const idMoneda = labelBuscadorMoneda.value;
+  return idMoneda;
+    //const json = consultarApi(idMoneda);
+    //buscarMoneda(json)
     //console.log(json);
 
 })
+ 
+buscarMoneda(json,monedaBuscar);
+}
 
-const buscarMoneda = json =>{
+
+
+
+const buscarMoneda = (json,monedaBuscar) =>{
     json.then(monedas=>{
         const arregloDeCriptomonedas = new Array();
         
