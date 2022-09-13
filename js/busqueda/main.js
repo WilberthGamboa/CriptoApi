@@ -1,15 +1,11 @@
 
 const main = () =>{
     const json =consultarApi();
-    obtenerDatos(json);
+    filtrarMonedas(json);
 
 }
 
 
-
-
-
-
-
 main();
+
 

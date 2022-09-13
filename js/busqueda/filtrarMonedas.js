@@ -1,24 +1,23 @@
 
 //VEAMOS SI DEVOLVEMOS LAS MONEDAS?
 
+
 const filtrarMonedas = json =>{
   //OBTENEMOS EL TEXTO DEL BOTON POR CADA EVENTO
+
   const btnBuscardor = document.querySelector('#busqueda');
+
   const monedaBuscar = btnBuscardor.addEventListener('click', ()=>{
+
   const labelBuscadorMoneda = document.querySelector('#textoBuscador');
   const idMoneda = labelBuscadorMoneda.value;
-  return idMoneda;
-    //const json = consultarApi(idMoneda);
-    //buscarMoneda(json)
-    //console.log(json);
-
-})
+  buscarMoneda(json,idMoneda);
+ // return idMoneda;
+    
+}) //TERMINA EVENT LISTENER
  
-buscarMoneda(json,monedaBuscar);
+
 }
-
-
-
 
 const buscarMoneda = (json,monedaBuscar) =>{
     json.then(monedas=>{
@@ -43,9 +42,6 @@ const buscarMoneda = (json,monedaBuscar) =>{
             
         })
         
-       
-
-      
         
         function filterItems(query) {
             
@@ -58,10 +54,9 @@ const buscarMoneda = (json,monedaBuscar) =>{
         //  console.log(filterItems(document.querySelector('#textoBuscador').value))
           
           const prueba = document.querySelector('#prueba');
+          eliminarObjetosDom();
          x.forEach(moneda => {
-            const div = document.createElement('P');
-            div.textContent=`${moneda.nombre}`
-            prueba.appendChild(div);
+            crearElementosDom(moneda);
          })
           
         
