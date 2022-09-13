@@ -9,7 +9,8 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: .5rem;
-  
+  background-color: #181A20;
+  margin-bottom: 1.3rem;
   
   text-transform: uppercase;
   @include m.desktop{
@@ -45,7 +46,7 @@ body{
    
   }
 }
-.main{
+.criptomonedas-lista{
   
   display: grid;
    
@@ -65,8 +66,8 @@ body{
 
 }
 .tarjetaCripto{
-    background: #F5F5F5;
-  box-shadow: 5px 5px 5px rgba(#BA7E7E, .5);
+    background: #181A20;
+ box-shadow: 5px   rgba(#FF7E0D, 1);
   border-radius: 10px;
   display: flex;
   flex-direction: column;

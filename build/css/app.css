@@ -12,8 +12,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(to bottom, #89b2f0, #7cb8f1, #70bdf0, #67c2ed, #62c6e9);
   font-size: 1.6rem;
+  color: #EAECEF;
+  background-color: #0B0E11;
 }
 
 p {
@@ -368,6 +369,8 @@ template {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  background-color: #181A20;
+  margin-bottom: 1.3rem;
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
@@ -400,20 +403,20 @@ template {
   }
 }
 
-.main {
+.criptomonedas-lista {
   display: grid;
   /* Cambia los valores para experimentar👇 */
   gap: 2rem;
 }
 @media (min-width: 768px) {
-  .main {
+  .criptomonedas-lista {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 @media (min-width: 992px) {
-  .main {
+  .criptomonedas-lista {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
@@ -421,8 +424,8 @@ template {
 }
 
 .tarjetaCripto {
-  background: #F5F5F5;
-  box-shadow: 5px 5px 5px rgba(186, 126, 126, 0.5);
+  background: #181A20;
+  box-shadow: 5px #ff7e0d;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
