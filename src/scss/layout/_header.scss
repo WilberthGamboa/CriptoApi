@@ -1,0 +1,46 @@
+@use '../base/variables'  as v;
+@use '../base/mixins'  as m;
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: v.$colorHeader;
+    margin-bottom: 1.3rem;
+    
+    text-transform: uppercase;
+    @include m.desktop{
+      flex-direction: row;
+    }
+    
+    h1{
+      font-size: 4rem;
+      margin: .2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+
+  .listaHeader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    ul{
+      margin: 0;
+      margin-bottom: 1rem;
+      
+      padding: 0;
+      list-style: none;
+      font-weight: 700;
+      margin-right: 1rem;
+      
+  
+    }
+  
+    @include m.desktop{
+      flex-direction: row;
+     
+    }
+  }

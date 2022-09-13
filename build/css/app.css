@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*
+$verde: #0B0E11;
+$rosa: #F53756;
+$amarillo:#FEF46D;
+$morado: #752F97;
+$negro: #000000;
+$blanco : #FFFFFF;
+*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -425,7 +433,6 @@ template {
 
 .tarjetaCripto {
   background: #181A20;
-  box-shadow: 5px #ff7e0d;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
