@@ -1,0 +1,19 @@
+@use '../base/variables'  as v;
+@use '../base/mixins'  as m;
+.boton-amarillo{
+   
+   
+
+    a{
+        background-color: v.$colorBotonesNav;
+        color: v.$fuenteColorBoton;
+        padding: 1rem 3rem;
+        text-align: center;
+        display: block;
+        &:hover{
+            background-color: darken(v.$colorBotonesNav, 10%);
+        }
+        border-radius: .3rem;
+    }
+    
+}

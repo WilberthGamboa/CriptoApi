@@ -9,22 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../js/objetos.js"></script>
-    <script src="../js/consultarApi.js"></script>
-    <script src="../js/datosIndex.js"></script>
-    <script src="../js/main.js"></script>
+    
+    
+    
 </head>
 
 <body>
     <header class="header">
         <h1>CriptoApi</h1>
-        <nav class="listaHeader">
-           <a href="busqueda.html"> <ul>10 Monedas</ul></a>
-            <ul>Busqueda de monedas</ul>
+        <nav class="listaHeader" >
+            <ul class="boton-amarillo"><a href="index.html" >10 Monedas </a></ul>
+            <ul class="boton-amarillo"><a href="busqueda.html">Busqueda de monedas</a></ul>
         </nav>
     </header>
 
-    <main class="main contenedor">
+    <main id="main" class="main contenedor">
+
+        <div id="criptomonedas-lista" class="criptomonedas-lista">
+
+        </div>
 
     </main>
 
@@ -32,8 +35,12 @@
 
 
 
-
     
+    <script src="../js/consultarApi.js"></script>
+    <script src="../js/objetos/objetos.js"></script>
+    <script src="../js/utilities/insertarMonedasDomSimple.js"></script>
+    <script src="../js/index/datosIndex.js"></script>
+    <script src="../js/index/main.js"></script>
    
 </body>
 </html>

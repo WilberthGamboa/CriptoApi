@@ -1,0 +1,64 @@
+@use '../base/variables'  as v;
+@use '../base/mixins'  as m;
+.criptomonedas-lista{
+  
+    display: grid;
+     
+  /* Cambia los valores para experimentar👇 */
+    
+      gap: 2rem;
+      @include m.tablet {
+          @include m.grid(2,1rem);
+          
+      }
+      @include m.desktop {
+          @include m.grid(4,1rem);
+        
+          
+      }
+      @include m.desktopXL {
+        @include m.grid(5,1rem);
+      }
+  
+  }
+  .tarjetaCripto{
+      background: v.$colorFondoTarjetaCripto;
+   //box-shadow: 5px   rgba(#FF7E0D, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+    h2{
+      
+      text-transform: uppercase;
+      text-align: center;
+    }
+  
+    p{
+      margin: 1rem;
+    }
+    
+  
+    @include m.desktop {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      
+      
+    }
+   
+  }
+  
+  .criptocsvForma{
+    
+          width: 100px;
+          height: 100px;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+         
+    
+  }

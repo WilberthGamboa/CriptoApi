@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../build/css/app.css">
 </head>
 <body>
     <header class="header">
         <h1>CriptoApi</h1>
         <nav class="listaHeader">
-           <a href="busqueda.html"> <ul>10 Monedas</ul></a>
-            <a href="index.html"><ul>Busqueda de monedas</ul></a>
+           <ul class="boton-amarillo"><a href="index.html" > 10 Monedas </a></ul>
+            <ul class="boton-amarillo" > <a href="busqueda.html">Busqueda de monedas </a></ul>
         </nav>
     </header>
-    <main>
+    <main id="main" class="main contenedor">
         <div>
             <input type="label" id="textoBuscador">
             <input type="button" value="buscar" id="busqueda">
         </div>
-    </main>
+        <div id="criptomonedas-lista" class="criptomonedas-lista">
 
-    <script src="../js/filtrarMonedas.js"></script>
+        </div>
+    </main>
     <script src="../js/consultarApi.js"></script>
+    <script src="../js/objetos/objetos.js"></script>
+    <script src="../js/utilities/insertarMonedasDomSimple.js"></script>
+    <script src="../js/busqueda/filtrarMonedas.js"></script>
+    <script src="../js/busqueda/main.js"></script>
+    
+
     
 </body>
 </html>
