@@ -371,12 +371,23 @@ template {
   display: none;
 }
 
+.boton-amarillo a {
+  background-color: #E4C233;
+  color: #0B0E11;
+  padding: 1rem 3rem;
+  text-align: center;
+  display: block;
+  border-radius: 0.3rem;
+}
+.boton-amarillo a:hover {
+  background-color: #c9a81b;
+}
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
   background-color: #181A20;
   margin-bottom: 1.3rem;
   text-transform: uppercase;
@@ -424,6 +435,13 @@ template {
   }
 }
 @media (min-width: 992px) {
+  .criptomonedas-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1200px) {
   .criptomonedas-lista {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

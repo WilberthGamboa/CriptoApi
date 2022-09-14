@@ -12,9 +12,12 @@
           
       }
       @include m.desktop {
-          @include m.grid(5,1rem);
+          @include m.grid(4,1rem);
         
           
+      }
+      @include m.desktopXL {
+        @include m.grid(5,1rem);
       }
   
   }
