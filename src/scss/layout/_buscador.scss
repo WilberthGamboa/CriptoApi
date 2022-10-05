@@ -1,26 +1,40 @@
+@use '../base/mixins'  as m;
 @use '../base/variables'  as v;
 .buscador{
-    width: 100%;
-    
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
     background-color: v.$colorFondoBuscador;
     padding: 1rem;
+    border-radius: 5px 0 0 5px;
    
    input[type="label"]{
     border: none;
-    border-color: v.$colorFondoBuscador;
-    width: 80%;
     border-radius: 5px 0 0 5px;
     outline: none;
+    width: 60%;
     
-    
+    @include m.tablet {
+        width: 80%;
+    }
    }
    input[type="button"]{
     display: block;
-    width: 20%;
-   
+    
+    width: 40%;
+    
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    font-weight: bold;
+     @include m.tablet {
+        width:20%;
+     }
    }
+
+   margin-bottom: 2rem;
   
 }
