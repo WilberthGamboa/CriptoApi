@@ -2,8 +2,13 @@
 const main = () => {
     const api = new Api();
     const json = api.consultarApi();
-    obtenerDatos(json);
+    const datosInicio = new DatosInicio();
+    datosInicio.obtenerDatos(json);
 }
-main();
+
+window.addEventListener('load', () => {
+   main();
+});
+
 
 
