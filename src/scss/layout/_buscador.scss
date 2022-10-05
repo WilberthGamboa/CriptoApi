@@ -1,0 +1,26 @@
+@use '../base/variables'  as v;
+.buscador{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    background-color: v.$colorFondoBuscador;
+    padding: 1rem;
+   
+   input[type="label"]{
+    border: none;
+    border-color: v.$colorFondoBuscador;
+    width: 80%;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    
+    
+   }
+   input[type="button"]{
+    display: block;
+    width: 20%;
+   
+   }
+  
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 $verde: #0B0E11;
 $rosa: #F53756;
@@ -424,7 +423,6 @@ template {
 
 .criptomonedas-lista {
   display: grid;
-  /* Cambia los valores para experimentar👇 */
   gap: 2rem;
 }
 @media (min-width: 768px) {
@@ -479,4 +477,24 @@ template {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+
+.buscador {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  background-color: #F5F5F5;
+  padding: 1rem;
+}
+.buscador input[type=label] {
+  border: none;
+  border-color: #F5F5F5;
+  width: 80%;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.buscador input[type=button] {
+  display: block;
+  width: 20%;
 }
