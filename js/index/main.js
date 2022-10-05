@@ -1,12 +1,9 @@
 
- const json =consultarApi();
+const main = () => {
+    const api = new Api();
+    const json = api.consultarApi();
+    obtenerDatos(json);
+}
+main();
 
- obtenerDatos(json);
- 
-
- 
-
-
-
-//const {id} = json
 

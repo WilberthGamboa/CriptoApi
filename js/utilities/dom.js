@@ -1,7 +1,11 @@
-const crearElementosDom = (moneda) =>{
-    //obtenemos la etiqueta main
+class Dom{
+  constructor(){
+
+  }
+  crearElementosDom(moneda){
+     //obtenemos la etiqueta main
   //  const main= document.querySelector('#main');
-    const divListaCripto = document.querySelector("#criptomonedas-lista");
+  const divListaCripto = document.querySelector("#criptomonedas-lista");
     
    
   //  const borrar = document.querySelectorAll('.tarjetaCripto');
@@ -30,12 +34,18 @@ const crearElementosDom = (moneda) =>{
     acronimo.textContent=`Siglas: ${moneda.acronimo}`;
     rank.textContent=`Rank: ${moneda.rank}`;
     precio.textContent=`Valor MXN: ${moneda.precio}`;
-}
 
-
-const eliminarObjetosDom = () => {
-    const divListaCripto = document.querySelector("#criptomonedas-lista");
+  }
+// "#criptomonedas-lista"
+ 
+  eliminarObjetosDom(querySelector){
+    const divListaCripto = document.querySelector(querySelector);
     while (divListaCripto.firstChild) {
         divListaCripto.removeChild(divListaCripto.firstChild);
-      }
+    }
+
+  }
+
 }
+
+

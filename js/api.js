@@ -1,24 +1,38 @@
 //Funciones
-const consultarApi = async () =>{
- 
-  const url = `https://api.coingecko.com/api/v3/coins`;
-    //const url = 'https://api.coingecko.com/api/v3/search?query=';
-    
-   try {
-    const  respuesta =  await fetch(`${url}`);
+class Api {
+  constructor() {
 
-    if (respuesta.status==200) {
+  }
+
+  //METODOS
+  
+  consultarApi = async () => {
+
+    const url = `https://api.coingecko.com/api/v3/coins`;
+    //const url = 'https://api.coingecko.com/api/v3/search?query=';
+
+    try {
+      const respuesta = await fetch(`${url}`);
+
+      if (respuesta.status == 200) {
         const json = await respuesta.json();
         console.log(json);
-        
-      return json;
-       
-    } 
-   } catch (error) {
-    
-   }
 
+        return json;
+
+      }
+    } catch (error) {
+
+    }
+
+  }
 }
+
+
+
+
+
+
 /*
 const buscarMonedasPrincipales = monedas =>{
     
