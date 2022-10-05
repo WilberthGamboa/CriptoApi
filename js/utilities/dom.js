@@ -5,8 +5,10 @@ class Dom{
   crearElementosDom(moneda){
      //obtenemos la etiqueta main
   //  const main= document.querySelector('#main');
+
+
   const divListaCripto = document.querySelector("#criptomonedas-lista");
-    
+  
    
   //  const borrar = document.querySelectorAll('.tarjetaCripto');
     

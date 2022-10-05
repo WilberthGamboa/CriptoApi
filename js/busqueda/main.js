@@ -6,11 +6,13 @@ const main = () =>{
     const datosInicio = new DatosInicio();
     datosInicio.obtenerDatos(json);
     filtroMonedas.filtrarMonedas(json);
+    
 }
-window.document.addEventListener('load', () => {
 
-} )
+window.addEventListener('load', () => {
+    main();
+ });
 
-main();
+
 
 
