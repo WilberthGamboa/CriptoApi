@@ -6,9 +6,14 @@ class Api {
 
   //METODOS
   
-  consultarApi = async () => {
+  consultarApi = async (query) => {
 
     const url = `https://api.coingecko.com/api/v3/coins`;
+
+    if(query!=null){
+     url = 'https://api.coingecko.com/api/v3/search?query='+query;
+
+    }
     //const url = 'https://api.coingecko.com/api/v3/search?query=';
 
     try {

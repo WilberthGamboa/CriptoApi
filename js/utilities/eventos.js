@@ -9,12 +9,20 @@ class Eventos{
         const nodo = document.querySelector(query);
         nodo.addEventListener('click',(e)=>{
           //  console.log(e.target.h2);
-         var x= e.composedPath();
-        if(x.length){
-            
+         const path= e.composedPath();
+
+      //   console.log(x);
+      //   console.log(e.target.tagName);
+
+        if(e.target.tagName=='IMG'){
+            console.log(path[1].firstChild.textContent);
+            const moneda = path[1].firstChild.textContent;
+
+            localStorage.setItem('moneda', moneda);
+//localStorage.getItem('moneda');
         }
         
-         
+
             /*
            console.log(e.path);
            var x = e.path[1]; //div.tarjetaCripto
