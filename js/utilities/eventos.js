@@ -19,6 +19,7 @@ class Eventos{
             const moneda = path[1].firstChild.textContent;
 
             localStorage.setItem('moneda', moneda);
+            window.open('../../html/moneda.html')
 //localStorage.getItem('moneda');
         }
         

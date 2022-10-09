@@ -8,10 +8,15 @@ class Api {
   
   consultarApi = async (query) => {
 
-    const url = `https://api.coingecko.com/api/v3/coins`;
+    let url = `https://api.coingecko.com/api/v3/coins`;
+   
 
     if(query!=null){
-     url = 'https://api.coingecko.com/api/v3/search?query='+query;
+      console.log('hola');
+
+      url = `https://api.coingecko.com/api/v3/coins/${query}`;
+      
+     //url = 'https://api.coingecko.com/api/v3/search?query='+query;
 
     }
     //const url = 'https://api.coingecko.com/api/v3/search?query=';
