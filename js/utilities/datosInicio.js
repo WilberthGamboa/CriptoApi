@@ -11,7 +11,7 @@ class DatosInicio{
       monedas.map(moneda => {
         //console.log(`${moneda.market_data.current_price.mxn}`)
   
-        if (moneda.market_data.market_cap_rank <= 100) {
+        if (moneda.market_data.market_cap_rank <= 10) {
   
           const { id, symbol, market_data, image } = moneda;
   
