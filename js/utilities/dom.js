@@ -6,7 +6,7 @@ class Dom{
      //obtenemos la etiqueta main
   //  const main= document.querySelector('#main');
 
-
+console.log(` la moneda ${moneda}`)
   const divListaCripto = document.querySelector("#criptomonedas-lista");
   
    

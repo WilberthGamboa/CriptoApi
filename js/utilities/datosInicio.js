@@ -27,7 +27,7 @@ class DatosInicio{
   
   
         }
-  
+        
       });
   
       agregarDatosDom(arregloDeCriptomonedas);
@@ -42,11 +42,9 @@ class DatosInicio{
       });
     
     }
-  
+
+
   }
-  
-  
-  
-  
+
 }
 
